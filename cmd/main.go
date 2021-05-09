@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	sls_policy_gen "github.com/highhi/slspolicygen"
+	"github.com/highhi/slspolicygen"
 	"github.com/manifoldco/promptui"
 )
 
@@ -74,7 +74,7 @@ func main() {
 	}
 	defer file.Close()
 
-	err = sls_policy_gen.Gen(file, map[string]interface{}{
+	err = slspolicygen.Gen(file, map[string]interface{}{
 		"account":          accountID,
 		"servicename":      serviceName,
 		"dynamoDBRequired": dynamoDB == "y",
