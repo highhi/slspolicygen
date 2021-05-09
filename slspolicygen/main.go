@@ -11,11 +11,12 @@ import (
 )
 
 func main() {
+	style := promptui.IconInitial + " {{ . | cyan | bold }} "
 	templates := &promptui.PromptTemplates{
-		Prompt:  promptui.IconInitial + " {{ . | cyan | bold }} ",
-		Valid:   promptui.IconInitial + " {{ . | cyan | bold }} ",
-		Invalid: promptui.IconInitial + " {{ . | cyan | bold }} ",
-		Success: promptui.IconInitial + " {{ . | cyan | bold }} ",
+		Prompt:  style,
+		Valid:   style,
+		Invalid: style,
+		Success: style,
 	}
 
 	serviceNamePrompt := promptui.Prompt{
@@ -85,5 +86,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(promptui.IconGood + " Generated sls-policy.json!")
+	fmt.Println(promptui.IconGood + " sls-policy.json generated!")
 }
