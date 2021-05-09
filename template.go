@@ -1,4 +1,4 @@
-package sls_policy_gen
+package slspolicygen
 
 var policyTemplate = `
 {

@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	sls_policy_gen "github.com/highhi/sls-policy-gen"
+	sls_policy_gen "github.com/highhi/slspolicygen"
 	"github.com/manifoldco/promptui"
 )
 

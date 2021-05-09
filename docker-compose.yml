@@ -5,8 +5,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: sls_policy_gen
+    container_name: slspolicygen
     volumes:
-      - ./:/go/src/github.com/highhi/sls-policy-gen
+      - ./:/go/src/github.com/highhi/slspolicygen
     tty: true
   

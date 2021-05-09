@@ -1,4 +1,4 @@
-module github.com/highhi/sls-policy-gen
+module github.com/highhi/slspolicygen
 
 go 1.16
 
