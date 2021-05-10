@@ -3,7 +3,7 @@ before:
   hooks:
     - go mod tidy
 builds:
-  - main: ./slspolicygen
+  - main: ./slspolicygen/main.go
     binary: slspolicygen
     ldflags:
       - -s -w
